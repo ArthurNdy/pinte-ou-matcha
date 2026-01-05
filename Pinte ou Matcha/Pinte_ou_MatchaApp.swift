@@ -1,17 +1,23 @@
-//
-//  Pinte_ou_MatchaApp.swift
-//  Pinte ou Matcha
-//
-//  Created by Arthur Naudy on 17/12/2025.
-//
-
 import SwiftUI
 
 @main
 struct Pinte_ou_MatchaApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack {
+                Image("background")
+                    .resizable()
+                    .ignoresSafeArea()
+                ContentView()
+            }
+            .onAppear {
+                UIDevice.current.setValue(
+                    UIInterfaceOrientation.landscapeLeft.rawValue,
+                    forKey: "orientation"
+                )
+            }
         }
     }
 }
