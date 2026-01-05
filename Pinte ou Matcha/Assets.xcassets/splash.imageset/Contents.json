@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "Présentation sans titre 1.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "turtlerock@2x.jpg",
+      "filename" : "Présentation sans titre 2.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Présentation sans titre.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }
